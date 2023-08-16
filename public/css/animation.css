@@ -1,0 +1,121 @@
+@keyframes aparecer{
+    0%{
+    opacity: 0%;
+    }
+    50%{
+    opacity: 100%;
+    }
+    75%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+        
+    }
+
+}
+
+@keyframes porcentBar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes animate_left{
+    0% {
+        transform: translateX(90%) /* Posición inicial igual a la posición actual */
+    }
+    100% {
+        transform: translateX(0%); /* Posición final a 100% del ancho */
+    }
+}
+@keyframes animate_right{
+    0% {
+        transform: translateX(0); /* Posición inicial igual a la posición actual */
+    }
+    100% {
+        transform: translateX(90%); /* Posición final a 100% del ancho */
+    }
+}
+@keyframes animate_barr_princ{
+    0%{
+        width: 0%;
+        background-color: #010440;;
+    }
+    100%{
+        background-color: #010440;;
+        width: 25%;
+        
+    }
+}
+@keyframes animate_barr_med{
+    0%{
+        width: 0%;
+        background-color: #010440;;
+    }
+    100%{
+        background-color: #010440;;
+        width: 50%;
+        
+    }
+}
+@keyframes animate_barr_avanz{
+    0%{
+        width: 0%;
+        background-color: #010440;;
+    }
+    100%{
+        background-color: #010440;;
+        width: 75%;
+        
+    }
+}
+@keyframes animate_margin{
+  
+    25%{
+        border-top-color: #d9d9d9;
+        transform: rotate('90');
+    }
+    50%{
+        border-top-color: #d9d9d9;
+        border-right-color:#d9d9d9;
+        transform: rotate('180');
+    }
+    75%{
+        border-top-color:#d9d9d9;
+        border-right-color: #d9d9d9;
+        border-bottom-color: #d9d9d9;
+        transform: rotate('270');
+    }
+    100%{
+        border-top-color: #d9d9d9;
+        border-right-color: #d9d9d9;
+        border-bottom-color: #d9d9d9;
+        border-left-color: #d9d9d9;
+        transform: rotate('360');
+    }
+    
+}
+.animate_mov_left{
+    animation-name: animate_left;
+    animation-duration: 300ms;
+}
+.animate_mov_right{
+    animation-name: animate_right;
+    animation-duration: 300ms;
+}
+.animate_tittle{
+    animation-name: aparecer;
+    animation-duration: 1500ms;
+}
+.animate_subtitle{
+    animation-name: aparecer;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+}
+/* .animate_bar_princi{
+    animation: animate_barr_princ 2s ease-in ;
+  
+} */
